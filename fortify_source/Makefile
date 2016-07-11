@@ -1,5 +1,4 @@
-DIRS = RELRO fortify_source  StackProtector
-# ldd3-examples : failed to compile
+DIRS = 0 1 2 
 
 all:
 	$(foreach dir,$(DIRS),$(MAKE) -C $(dir);)
