@@ -1,4 +1,4 @@
-** From [RELRO - A (not so well known) Memory Corruption Mitigation Technique](http://tk-blog.blogspot.com/2009/02/relro-not-so-well-known-memory.html) **
+From [RELRO - A (not so well known) Memory Corruption Mitigation Technique](http://tk-blog.blogspot.com/2009/02/relro-not-so-well-known-memory.html)
 
 ## Testcase 1 (Ubuntu 14.04.4 LTS): Partial RELRO
 
