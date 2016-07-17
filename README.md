@@ -7,8 +7,13 @@ Memory Corruption Mitigation Methods In My Mind
     - `gcc ­-fstack-protector`
 
 - Heap protection
+    - enable by default
+
+- Double free checking
+    - enable by default
 
 - Libc pointer encryption
+    - enable by default
 
 - FORTIFY_SOURCE
     - `gcc ­-D_FORTIFY_SOURCE=2 ­-O2`
@@ -22,6 +27,12 @@ Memory Corruption Mitigation Methods In My Mind
 - RELEO
     - `ld ­-z relro -z now` 
 
+
+-------------------------------------------------
+
+
 - NX
+    - implement in Linux Kernel
 
 - ASLR(Address Space Layout Randomization)
+    - implement in Linux Kernel
