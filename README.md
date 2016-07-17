@@ -36,3 +36,8 @@ Memory Corruption Mitigation Methods In My Mind
 
 - ASLR(Address Space Layout Randomization)
     - implement in Linux Kernel
+
+
+# References
+
+[1] [Secure Programming with GCC and GLibc](https://cansecwest.com/csw08/csw08-holtmann.pdf)
