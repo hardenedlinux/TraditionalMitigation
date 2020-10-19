@@ -5,7 +5,7 @@ List all the traditional mitigations in compilers(GCC, Clang, etc.) to defend me
 ## User space
 
 - Stack Protector
-    - `-fstack-protector`
+    - `-fstack-protector`, `-fstack-protector-all`, `-fstack-protector-strong`
 
 - Heap protection
     - enable by default
@@ -17,16 +17,19 @@ List all the traditional mitigations in compilers(GCC, Clang, etc.) to defend me
     - enable by default
 
 - FORTIFY_SOURCE
-    - `-D_FORTIFY_SOURCE=2 ­-O2`
+    - `-D_FORTIFY_SOURCE=2­-O2`
 
 - Format String Protection
     - `-Wformat ­-Wformat-security`
 
-- PIE
-    - `-pie /­-fPIE`
+- PIC/PIE 
+    - `-fPIC`, `-fPIE -pie`
 
 - RELEO
-    - `-z relro -z now` 
+    - `-Wl,-z,relro,-z,now` 
+
+- Stack clash protection
+    - `-fstack-clash-protection`
 
 -------------------------------------------------
 
