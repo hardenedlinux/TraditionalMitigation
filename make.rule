@@ -4,7 +4,7 @@ EXECSTACK	= -z execstack
 # Stack Protector Options
 STACKPNO 	= -fno-stack-protector
 STACKREG 	= -fstack-protector
-STACKSTRONG = -fstack-protector-strong
+STACKSTRONG 	= -fstack-protector-strong
 STACKALL 	= -fstack-protector-all
 
 # FORTIFY_SOURCE Options
@@ -14,7 +14,7 @@ FORTIFY1	= -D_FORTIFY_SOURCE=1
 FORTIFY2	= -D_FORTIFY_SOURCE=2
 
 # Compile options
-CC 			= gcc
+CC 		= gcc
 CFLAGS 		= -Wall -Wextra -ggdb -pie -fPIE
 SECFLAGS 	= $(STACKPNO)
 

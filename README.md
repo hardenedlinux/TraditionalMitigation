@@ -1,10 +1,11 @@
 # TraditionalMitigation
-Traditional Mitigation in GCC to defend memory corruption
 
-Memory Corruption Mitigation Methods In My Mind
+List all the traditional mitigations in compilers(GCC, Clang, etc.) to defend memory corruption
+
+## User space
 
 - Stack Protector
-    - `gcc ­-fstack-protector`
+    - `-fstack-protector`
 
 - Heap protection
     - enable by default
@@ -16,27 +17,35 @@ Memory Corruption Mitigation Methods In My Mind
     - enable by default
 
 - FORTIFY_SOURCE
-    - `gcc ­-D_FORTIFY_SOURCE=2 ­-O2`
+    - `-D_FORTIFY_SOURCE=2 ­-O2`
 
 - Format String Protection
-    - `gcc ­-Wformat ­-Wformat-security`
+    - `-Wformat ­-Wformat-security`
 
 - PIE
-    - `ld -pie / gcc ­-fPIE`
+    - `-pie /­-fPIE`
 
 - RELEO
-    - `ld ­-z relro -z now` 
-
+    - `-z relro -z now` 
 
 -------------------------------------------------
 
+## Kernel space
+
+- Stack Protector
+    - implement in Linux Kernel
+
+- Heap protection
+    - implement in Linux Kernel
+
+- FORTIFY_SOURCE
+    - implement in Linux Kernel
 
 - NX
     - implement in Linux Kernel
 
 - ASLR(Address Space Layout Randomization)
     - implement in Linux Kernel
-
 
 # References
 
