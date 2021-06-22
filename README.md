@@ -25,7 +25,7 @@ List all the traditional mitigations in compilers(GCC, Clang, etc.) to defend me
 - PIC/PIE 
     - `-fPIC`, `-fPIE -pie`
 
-- RELEO
+- RELRO
     - `-Wl,-z,relro,-z,now` 
 
 - Stack clash protection
@@ -36,19 +36,25 @@ List all the traditional mitigations in compilers(GCC, Clang, etc.) to defend me
 ## Kernel space
 
 - Stack Protector
-    - implement in Linux Kernel
+    - implemented in Linux Kernel
 
-- Heap protection
-    - implement in Linux Kernel
+- Slab/Slub/Slob Protection
+    - implemented in Linux kernel
 
 - FORTIFY_SOURCE
-    - implement in Linux Kernel
+    - implemented in Linux Kernel
 
 - NX
-    - implement in Linux Kernel
+    - implemented in Linux Kernel
+
+- SMAP/SMEP
+    - implemented in Linux kernel
 
 - ASLR(Address Space Layout Randomization)
-    - implement in Linux Kernel
+    - implemented in Linux Kernel
+
+- KASLR(Kernel Address Space Layout Randomization)
+    - implemented in Linux Kernel
 
 # References
 
